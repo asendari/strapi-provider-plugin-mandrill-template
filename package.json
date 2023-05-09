@@ -1,0 +1,21 @@
+{
+  "name": "strapi-provider-plugin-mandrill-template",
+  "version": "1.0.0",
+  "author": "Thomas Lohner",
+  "license": "MIT",
+  "dependencies": {
+    "@mailchimp/mailchimp_transactional": "^1.0.50"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib",
+  "description": "Mandrill provider for strapi email with template",
+  "homepage": "https://github.com/asendari",
+  "keywords": [
+    "email",
+    "strapi",
+    "mandrill"
+  ],
+  "repository": "https://github.com/asendari/strapi-provider-plugin-mandrill-template.git"
+}
