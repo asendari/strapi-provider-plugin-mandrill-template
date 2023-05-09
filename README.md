@@ -40,3 +40,32 @@ Add on config/plugins.js file the configuration bellow
     },
   }
 ```
+
+## Use template with Merge Vars
+
+```
+  await strapi.plugins['email'].services.email.send({
+    to: 'test@mail.com',
+    from: 'test@mail.com',
+    subject: 'Strapi mail with template and global merge vars',
+    template_name: 'mailchimp-template-name',
+    global_merge_vars: [
+      { name: 'firstname', content:'Thomas' }
+    ]
+  })
+```
+
+## Use template with Handlebars
+
+```
+  await strapi.plugins['email'].services.email.send({
+    to: 'test@mail.com',
+    from: 'test@mail.com',
+    subject: 'Strapi mail with template and handlebars formating',
+    template_name: 'mailchimp-template-name',
+    merge_language: 'handlebars',
+    global_merge_vars: [
+      { name: 'firstname', content:'Thomas' }
+    ]
+  })
+```
